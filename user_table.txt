@@ -1,0 +1,17 @@
+create table users(
+    id number(7) not null,
+    userid varchar2(20) not null,
+    userpw varchar2(20) not null,
+    hp varchar2(20) not null,
+    email varchar2(50) not null,
+    reg_date date default sysdate,
+    update_date date
+);
+
+drop table u_ser;
+
+create sequence user_seq
+    increment by 1
+    start with 1;
+    
+select * from users;
